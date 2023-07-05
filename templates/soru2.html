@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soru 2</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='soru2.css') }}">
+</head>
+<body>
+
+
+    <div class="box">
+
+        <form name="form" action="{{ url_for('soru2cevap')}}" method="post">
+            <h2> Anahtar Kelime Çıkarma </h2>
+            <input type="text" id="text" name="text" placeholder="URL Giriniz..">
+            <input type="text" id="text2" name="text2" placeholder="URL Giriniz..">
+            <input type="submit" value="Kelimeleri Bul!" />
+        </form>
+
+    </div>
+
+</body>
+</html>
